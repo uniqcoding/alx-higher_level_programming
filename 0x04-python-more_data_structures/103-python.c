@@ -12,7 +12,7 @@ void print_python_bytes(PyObject *p)
 {
 long int size;
 int i;
-char *string_str = NULL;
+char *trying_str = NULL;
 
 printf("[.] bytes object info\n");
 if (!PyBytes_Check(p))
@@ -21,7 +21,7 @@ printf(" [ERROR] invalid Bytes Object\n");
 return;
 }
 
-PyBytes_AsStringAndSize(p, &string_str, &size);
+PyBytes_AsStringAndSize(p, &trying_str, &size);
 
 printf(" size: %li\n", size);
 printf(" trying string: %s\n", trying_str);
