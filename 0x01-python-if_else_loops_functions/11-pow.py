@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Author - Meli
+# Author - Meli
 
 def pow(a, b):
     return (a ** b)
