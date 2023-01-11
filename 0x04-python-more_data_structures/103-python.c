@@ -17,7 +17,7 @@ char *trying_str = NULL;
 printf("[.] bytes object info\n");
 if (!PyBytes_Check(p))
 {
-printf(" [ERROR] invalid Bytes Object\n");
+printf(" [ERROR] Invalid Bytes Object\n");
 return;
 }
 
@@ -46,7 +46,7 @@ int i;
 PyListObject *list = (PyListObject *)p;
 const char *type;
 
-printf("[*] Python list infor\n");
+printf("[*] Python list info\n");
 printf("[*] Size of the Python List = %li\n", size);
 printf("[*] Allocated = %li\n", list->allocated);
 for (i = 0; i < size; i++)
